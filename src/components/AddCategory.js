@@ -24,12 +24,16 @@ export const AddCategory = ( { setCategories } ) => {
 
     return (
         <form onSubmit={ handleSubmit }>
+            
             <input 
                 type="text"
                 value={inputValue}
                 onChange={ handleInputChange }
             />
-            <button>Agregar Categoria</button>
+            <button
+               className="btn btn-primary mb-3" >
+                Agregar Categoria
+            </button>
         </form>
   )
 }
