@@ -10,19 +10,19 @@ export const GifGrid = ({ category }) => {
         <>
             <h3>{ category }</h3>
             {loading && <p>Loading...</p>}
-            <div className='card-grid'>
-                <ol>
-                    {
-                        images.map(  (img) =>(
+   
+            <div className='col-lg-12 row'>
+                {
+                    images.map(  (img) =>(
 
-                            <GifGridItem 
-                            key      = {img.id}
-                            {...img} 
-                            />
-                        ))
-                    }
-                </ol>
+                        <GifGridItem 
+                        key      = {img.id}
+                        {...img} 
+                        />
+                    ))
+                }
             </div>
+
             
  
         </>
